@@ -9,6 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<AuthPage />} />
         <Route path="/postproperty" element={<PostPropertyForm/>} />
+        {/* <Route path="/tenantform" elementless={<TenantProfileForm/>} /> */}
       </Routes>
     </Router>
   );
