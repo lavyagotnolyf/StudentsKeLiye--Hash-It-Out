@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import AuthPage from './pages/AuthPage'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AuthPage from "./pages/AuthPage";
 
-function App() {
- 
+const App = () => {
   return (
-    <div>
-      <AuthPage/>
-    </div>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<AuthPage />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
